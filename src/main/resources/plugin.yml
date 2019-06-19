@@ -1,0 +1,29 @@
+name: StringTheory
+version: ${project.version}
+main: net.draycia.stringtheory.StringTheory
+api-version: 1.14
+commands:
+  stcreate:
+    aliases: [stcr]
+    description: Creates the world with the given parameters
+    usage: /stcreate name:WorldName seed:RandomSeed structures:[true, false] environment:[NETHER, NORMAL, THE_END] worldtype:[AMPLIFIED, BUFFET, CUSTOMIZED, FLAT, LARGE_BIOMES, NORMAL]
+    permission: stringtheory.commands.stcreate
+  stteleport:
+    aliases: [sttp]
+    description: Teleports to the specified world
+    usage: /stteleport WorldName
+    permission: stringtheory.commands.stteleport
+  stload:
+    description: Loads the specified world
+    usage: /stload WorldName
+    permission: stringtheory.commands.stload
+  stlist:
+    aliases: [listworlds]
+    description: Lists all loaded worlds
+    usage: /stlist
+    permission: stringtheory.commands.stlist
+  stusers:
+    aliases: [stu]
+    description: Lists all users in each loaded world
+    usage: /stusers
+    permission: stringtheory.commands.stusers
